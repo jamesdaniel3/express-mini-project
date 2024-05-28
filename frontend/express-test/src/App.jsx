@@ -50,7 +50,6 @@ const App = () => {
 
     return (
         <div>
-            <h1>Social Media App</h1>
             <MessageForm createPost={createPost} />
             <MessageList posts={posts} updatePost={updatePost} deletePost={deletePost} />
         </div>

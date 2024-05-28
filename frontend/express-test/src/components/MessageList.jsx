@@ -3,9 +3,11 @@ import Message from './Message';
 
 const MessageList = ({ posts, updatePost, deletePost }) => {
     return (
-        <div>
+        <div style={{ display: 'flex', flexWrap: 'wrap' }}>
             {posts.map(post => (
-                <Message key={post.id} post={post} updatePost={updatePost} deletePost={deletePost} />
+                <div key={post.id} style={{ width: '0 0 300px', marginBottom: '10px' }}>
+                    <Message post={post} updatePost={updatePost} deletePost={deletePost} />
+                </div>
             ))}
         </div>
     );
